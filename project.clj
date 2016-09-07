@@ -1,11 +1,9 @@
 (defproject cljs-screeps "0.1.0-SNAPSHOT"
   :description "screeps clojurescript"
   :url "http://example.com/FIXME"
-  :dependencies [[org.clojure/clojure "1.7.0"]
-                 [org.clojure/clojurescript "1.7.48" :classifier "aot"
-                  :exclusion [org.clojure/data.json]]
+  :dependencies [[org.clojure/clojure "1.8.0"]
+                 [org.clojure/clojurescript "1.9.229"]
                  [cheshire "5.5.0"]
-                 [org.clojure/data.json "0.2.6" :classifier "aot"]
                  [clj-http "2.0.0"]
                  [org.clojure/data.codec "0.1.0"]]
   :jvm-opts ^:replace ["-Xmx1g" "-server"]
