@@ -13,6 +13,14 @@
   [c]
   (.-name c))
 
+(defn say
+  [c message]
+  (.say c message))
+
+(defn room
+  [c]
+  (.-room c))
+
 (defn move
   [c direction]
   (.move c direction))
