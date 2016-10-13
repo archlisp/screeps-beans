@@ -38,8 +38,8 @@
   (aget c "carryCapacity"))
 
 (defn transfer-energy
-  [c t & [amt]]
-  (.transferEnergy c t amt))
+  [c t]
+  (.transfer c t js/RESOURCE_ENERGY))
 
 (defn upgrade-controller
   [c ctrl]
@@ -56,4 +56,3 @@
 (defn memory!
   [c m]
   (aset js/Memory "creeps" (name c) (clj->js m)))
-

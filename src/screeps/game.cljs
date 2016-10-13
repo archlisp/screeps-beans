@@ -41,4 +41,3 @@
 (defn cpu-limit
   []
   (.-cpuLimit js/Game))
-
