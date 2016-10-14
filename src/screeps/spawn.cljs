@@ -5,7 +5,10 @@
   [s]
   (.-name s))
 
-(defn create-creep
-  [sp body]
-  (.createCreep sp (clj->js body) nil nil))
+(defn room
+  [s]
+  (.-room s))
 
+(defn create-creep
+  [sp body memory]
+  (.createCreep sp (clj->js body) nil (clj->js memory)))
